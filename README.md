@@ -1,11 +1,6 @@
 SwiftRatingView
 ===============
 
-[![CI Status](http://img.shields.io/travis/Hector Matos/SwiftRatingView.svg?style=flat)](https://travis-ci.org/Hector Matos/SwiftRatingView)
-[![Version](https://img.shields.io/cocoapods/v/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
-[![License](https://img.shields.io/cocoapods/l/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
-
 A five star rating view made in Swift. It's also an IBDesignable as well!
 
 The SwiftRatingView class is fully compatible with storyboards and up to date with the latest version of Xcode 6 Beta.
@@ -23,6 +18,11 @@ After you're done creating it, you can update the rating of the SwiftRatingView 
 ```swift
 ratingView.rating = 4.3
 ```
+
+[![CI Status](http://img.shields.io/travis/Hector Matos/SwiftRatingView.svg?style=flat)](https://travis-ci.org/Hector Matos/SwiftRatingView)
+[![Version](https://img.shields.io/cocoapods/v/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
+[![License](https://img.shields.io/cocoapods/l/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
 
 ## Usage
 

@@ -19,6 +19,8 @@ After you're done creating it, you can update the rating of the SwiftRatingView 
 ratingView.rating = 4.3
 ```
 
+
+
 [![CI Status](http://img.shields.io/travis/Hector Matos/SwiftRatingView.svg?style=flat)](https://travis-ci.org/Hector Matos/SwiftRatingView)
 [![Version](https://img.shields.io/cocoapods/v/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)
 [![License](https://img.shields.io/cocoapods/l/SwiftRatingView.svg?style=flat)](http://cocoadocs.org/docsets/SwiftRatingView)

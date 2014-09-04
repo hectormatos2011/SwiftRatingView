@@ -1,26 +1,9 @@
 //
-//  SwiftRatingView.swift
+//  RatingView.swift
+//  Zazzle
 //
 //  Created by Hector on 7/29/14.
-//  Copyright (c) 2014 Hector Matos. All rights reserved.
-//
-//	Permission is hereby granted, free of charge, to any person obtaining a copy
-//	of this software and associated documentation files (the "Software"), to deal
-//	in the Software without restriction, including without limitation the rights
-//	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//	copies of the Software, and to permit persons to whom the Software is
-//	furnished to do so, subject to the following conditions:
-//
-//	The above copyright notice and this permission notice shall be included in
-//	all copies or substantial portions of the Software.
-//
-//	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//	THE SOFTWARE.
+//  Copyright (c) 2014 Zazzle. All rights reserved.
 //
 
 import Foundation
@@ -28,18 +11,14 @@ import Foundation
 let kRatingPadding: CGFloat = 2.0
 let kMaxRatingControlStars: CGFloat = 5.0
 
-@IBDesignable class SwiftRatingView: UIView {
+@IBDesignable class RatingView: UIView {
     @IBInspectable var rating : CGFloat {
         get { return _rating }
         set (newRating) {
             if (newRating >= kMaxRatingControlStars) {
                 _rating = kMaxRatingControlStars
             } else {
-                if newRating != nil {
-                    _rating = newRating
-                } else {
-                    _rating = 0.0
-                }
+                _rating = newRating
             }
         }
     }
@@ -71,7 +50,7 @@ let kMaxRatingControlStars: CGFloat = 5.0
         setupStarViewConstraints()
     }
 
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupStarViewConstraints()
     }
@@ -157,7 +136,7 @@ class StarView: UIView {
         addSubview(starContainerView)
     }
 
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
@@ -174,7 +153,7 @@ class StarView: UIView {
 
     override func intrinsicContentSize() -> CGSize {
         if emptyStarImageView.image != nil && starImageView.image != nil {
-            let tallestImageHeight = max(emptyStarImageView.image.size.height, starImageView.image.size.height)
+            let tallestImageHeight = max(emptyStarImageView.image?.size.height ?? 0, starImageView.image?.size.height ?? 0)
             return CGSize(width: tallestImageHeight, height: tallestImageHeight)
         } else {
             return CGSize(width: (10.0 * kMaxRatingControlStars) + (kRatingPadding * (kMaxRatingControlStars - 1)), height: 10.0)

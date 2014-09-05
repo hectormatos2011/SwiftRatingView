@@ -5,7 +5,7 @@ A five star rating view made in Swift. It's also an IBDesignable as well!
 
 The SwiftRatingView class is fully compatible with storyboards and up to date with the latest version of Xcode 6 Beta.
 
-To use, just drop it in to your Swift project by either using a UIView in your storyboard and changing the Class to SwiftRatingView, or by usingcopying and pasting this code wherever you need it:
+To use, just drop it in to your Swift project by either using a UIView in your storyboard and changing the Class to SwiftRatingView, or by copying and pasting this code wherever you need it:
 
 ```swift
 let ratingView = SwiftRatingView()
